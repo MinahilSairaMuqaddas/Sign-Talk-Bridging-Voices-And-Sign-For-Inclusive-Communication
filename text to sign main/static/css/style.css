@@ -1,0 +1,69 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 0%;
+
+
+}
+
+#box{
+    height: 30%;
+    width: 20%;
+    margin-left: 20px;
+}
+#back-arrow 
+{
+  height: 10%;
+  width: 10%;
+  margin-top: 15%;
+  overflow: hidden;
+   
+
+}
+.player
+{
+    width: 25rem;
+    height: 30rem;
+    border: 3px solid black;
+    border-radius:10px;
+}
+.englishInput
+{
+    padding:10px;
+}
+
+.test_word_list
+{
+    /* height: 60rem; */
+    font-size:20px ;
+    font-weight: bold;
+    
+}
+.anim
+{
+    width: 100%;
+    height: 100%;
+}
+.word
+{
+    cursor: pointer;
+}
+
+.pslOutput
+{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: black;
+}
+
+.test_list
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
