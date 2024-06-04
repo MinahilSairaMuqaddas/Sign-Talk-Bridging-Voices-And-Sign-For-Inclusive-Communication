@@ -1,0 +1,377 @@
+/*
+1. :root variables/values
+2. font-face
+3. body
+4. top navbar cum header
+5. sanket heading
+6. home option cards
+7. bottom navbar
+8. media queries (Desktop)
+*/
+
+
+/***************************/
+
+
+/* root color variables+values */
+
+
+/**************************/
+
+/* :root {
+    --ultraLightGreen: rgb(171 143 151);
+    --lightGreen:  rgba(100, 85, 89, 0.77);
+    --brightGreen: rgba(100, 85, 89, 0.77) ;
+    --mediumGreen:rgba(226, 212, 216, 0.256);
+    --deepGreen:rgb(52, 41, 44);
+    --navyBlue:#120e0f9b;
+}
+ */
+
+/***************************/
+
+
+/* font face */
+
+
+/**************************/
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Aclonica";
+    src: url("./assets/fonts/Aclonica-Regular.ttf");
+}
+
+
+/***************************/
+
+
+/* global styles */
+
+
+/**************************/
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+#page{
+    height: 100vh;
+    width: 100%;
+}
+video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+body {
+    /* background-color: var(--ultraLightGreen) !important; */
+    min-height: 100vh;
+}
+
+
+/***************************/
+
+
+/* top navbar cum header */
+
+
+/**************************/
+
+.nav-cointainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 350%;
+    position: absolute;
+    top: 0%;
+    left: 2%;
+
+}
+
+.nav-left-content-wrapper {
+    margin-right: 3rem;
+    text-align: left;
+}
+
+.nav-left-content-wrapper h2 {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.nav-left-content-wrapper h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+}
+
+
+/* #user-name-underline {
+    border-bottom: 0.2rem solid var(--deepGreen);
+    border-radius: 1rem;
+    width: 2.5rem;
+} */
+
+.nav-right-content-wrapper {
+    position: relative;
+}
+
+#user-pfp {
+    display: inline-block;
+    position: relative;
+    margin-left: 3rem;
+    max-width: 2.5rem;
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.notification-badge {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -1px;
+    right: 2px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+
+/***************************/
+
+
+/* sanket heading */
+
+
+/**************************/
+
+.minahil-heading-cointainer {
+    margin-top: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+
+.minahil-heading-cointainer h1 {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color:white;
+    
+}
+
+
+/* .sanket-heading-cointainer span {
+    margin-top: -0.20rem;
+    border-bottom: 0.2rem solid var(--deepGreen);
+    border-radius: 1rem;
+    width: 5rem;
+} */
+
+.minahil-heading-cointainer p {
+    margin-top: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 600;
+    color:white;
+}
+
+
+/***************************/
+
+
+/* home option cards */
+
+
+/**************************/
+
+.home-options-wrapper {
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin: auto;
+    margin-top: 2rem;
+    /* width: fit-content; 
+    height: fit-content; */
+    width: 100%;
+    min-height: 70%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+
+}
+
+.option-card {
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+    object-fit: cover;
+    height: 20%;
+ 
+} 
+
+.option-card img {
+    width: 11rem;
+    height: 11rem;
+    object-fit: auto;
+}
+h3{
+    font-size: 10px;
+    font-weight: bold;
+}
+h5{
+    font-size: 8px;
+    font-weight: 900;
+    
+}
+#translator{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 18%;
+    top: 66%;
+}
+#learn{
+    height: 19px;
+    width: 15px;
+    position: absolute;
+    left: 37%;
+    top: 66.5%;
+}
+#contribute{
+    height: 19px;
+    width: 19px;
+    position: absolute;
+    left: 55%;
+    top: 66.5%;
+}
+#contact{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 74%;
+    top: 66.5%;
+}
+
+
+
+.option-card {
+    display: inline-block;
+   /* min-height: 30px; */
+    border: none;
+    background-color: darkgray;
+    border-radius: 18px;
+    transition: background-color 0.25s ease;
+       
+  
+}
+
+.option-card:active {
+    height: 10rem;
+    box-shadow: none;
+    transform: translateY(2px);
+   
+}
+
+#option-card-3 {
+    border: none;
+    background-color: none;
+    /* width: 100%; */
+}
+
+
+/***************************/
+
+
+/* bottom navbar */
+
+
+/**************************/
+
+.bottom-nav-bar {
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.649);
+    border-top: 3px solid rgba(255, 255, 255, 0.768);
+    padding-top: 7px;
+}
+
+.nav-btn {
+    display: inline-block;
+    left: 0;
+    border: none;
+    text-align: center;
+    color: black;
+    background-color: rgba(169, 169, 169, 0);
+}
+
+.nav-btn span {
+    border-radius: 18px;
+    padding: 2px 15px 2px 15px;
+}
+
+.nav-btn p {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.active-nav-btn span {
+    background-color: rgba(128, 128, 128, 0.155);
+}
+
+
+/***************************/
+
+
+/* media queries DESKTOP */
+
+
+/**************************/
+
+@media only screen and (min-width: 1080px) {
+    .option-card {
+        cursor: pointer;
+       
+        
+    }
+    .nav-btn {
+        cursor: pointer;
+    }
+    .home-options-wrapper {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .option-card:hover {
+        background-color:rgba(211, 211, 211, 0.885);
+    }
+}

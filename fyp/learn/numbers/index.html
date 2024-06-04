@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- required -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/8718/8718263.png">
+    <title>PSL - Learn - Numbers</title>
+    <style>
+        #loader {
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+    <style>
+        @font-face {
+            font-family: "Poppins";
+            src: url("/assets/fonts/Poppins-Regular.ttf");
+        }
+        #page{
+            height: 100vh;
+            width: 100%;
+        }
+        video{
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+        }
+        body {
+            font-family: 'Poppins';
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: black;
+        }
+        
+        #back-arrow img {
+            width: 1.3rem;
+        }
+        
+        #back-arrow {
+            position: absolute;
+            color: white;
+            top: 10px;
+            left: 10px;
+            font-size: 0.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 5px;
+            border: 2px solid white;
+            border-radius: 100%;
+        }
+        h1{
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: absolute;
+            top: 5%;
+            left: 46%;
+       
+        }
+        #underline {
+            margin: auto;
+            margin-top: -1rem;
+            border-bottom: 0.35rem solid white;
+            border-radius: 1rem;
+            width: 5rem;
+            position: absolute;
+            top: 17%;
+            left: 48%;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin-top: 2rem;
+            padding: 0;
+        }
+        
+        ul li {
+            padding-bottom: 1.5rem;
+        }
+        
+        .iframe-1 {
+            width: 100%;
+            height: 15rem;
+            margin: auto;
+            border: 3px solid gray;
+            border-radius: 18px;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+        }
+        .iframe-2 {
+            width: 100%;
+            height: 15rem;
+            margin: auto;
+            border: 3px solid grey;
+            border-radius: 18px;
+            position: absolute;
+            top: 60%;
+            left: 30%;
+        }
+        
+        @media only screen and (min-width: 1080px) {
+            iframe {
+                max-width: 40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <video autoplay loop muted src="https://player.vimeo.com/progressive_redirect/playback/727184481/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=2c4231e8bc115a8b4115474a7b359a295c0ec8d0bf7a15a3e4a19d5ea66b71bb"></video>
+    </div>
+    <!-- loader -->
+    <img src="https://cdn-icons-png.flaticon.com/128/8718/8718263.png" id="loader" class="center" alt="loader" srcset="">
+    <a href="/learn" id="back-arrow"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSivucB7RSQlK8aXSaAar_mXwrDyv_k5WvR_Q&usqp=CAU" alt="back"></a>
+    <h1>NUMBERS</h1><span id="underline"></span>
+    <ul>
+        <li><iframe class="iframe-1" width="560" height="315" src="https://www.youtube.com/embed/N_VDs-Vy6oo?si=PPtGLENqr0bfWU5f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+
+        <li>
+            <<iframe class="iframe-2" width="560" height="315" src="https://www.youtube.com/embed/9cS3RpxvRRY?si=LziKzj1eh1tJEkcn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+
+
+    </ul>
+
+    </iframe>
+
+</body>
+
+</html>
