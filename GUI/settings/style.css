@@ -1,0 +1,105 @@
+:root {
+    --ultraLightwhite: rgb(254, 254, 254);
+    --lightwhite: rgba(251, 254, 255, 0.482);
+    --brightwhite:rgba(207, 198, 198, 0.486) ;
+    --mediumwhite:rgba(233, 242, 229, 0.565);
+    --deepwhite:rgba(218, 239, 225, 0.381);
+    --navywhite:rgba(12, 13, 12, 0.945);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Aclonica";
+    src: url("/assets/fonts/Aclonica-Regular.ttf");
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+#page{
+    height: 100vh;
+    width: 100%;
+}
+video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+body {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--ultraLightwhite) !important;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#mockup {
+    display: block;
+    /* max-width: 25%; */
+    /* position: absolute; */
+    /* width: 50%; */
+    /* height: 50%; */
+}
+
+.active-nav-btn span {
+    background-color: var(--brightwhite);
+}
+
+.bottom-nav-bar {
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 100%;
+    background: var(--lightwhite);
+    border-top: 3px solid rgb(16, 17, 16);
+    padding-top: 7px;
+    z-index: 99;
+}
+
+.nav-btn {
+    display: inline-block;
+    left: 0;
+    border: none;
+    text-align: center;
+    color: var(--navywhite);
+    background-color: var(--lightwhite);
+}
+
+.nav-btn span {
+    cursor: pointer;
+    border-radius: 18px;
+    padding: 2px 15px 2px 15px;
+}
+
+.nav-btn p {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.navbar #nav-home {
+
+.active-nav-btn span {
+    background-color: var(--brightwhite);
+}
+}
+
+@media only screen and (min-width: 1080px) {
+    #mockup {
+        max-width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
